@@ -6,8 +6,19 @@ using System.Threading.Tasks;
 
 namespace DepartmentStoreApp
 {
+    enum Clothes
+    {
+        Shirts,
+        Shoes,
+        Pants,
+        Hats,
+
+        
+    }
+
     class Program
     {
+        
         static void Main(string[] args)
         {
             int choice;
@@ -15,6 +26,11 @@ namespace DepartmentStoreApp
             Console.WriteLine("What department would you like to begin shopping...\n Shirts\nPants\nShoes\nHats\nSales Items");
             string department = Console.ReadLine();
             int.TryParse(department, out choice);
+
+            
+
+
+
         }
     }
 }
