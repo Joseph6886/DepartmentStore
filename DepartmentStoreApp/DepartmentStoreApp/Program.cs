@@ -48,6 +48,8 @@ namespace DepartmentStoreApp
 
 
             Console.ReadLine();
+            Console.ReadLine();
+
         }
     }
 }
