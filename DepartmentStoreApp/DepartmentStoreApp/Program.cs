@@ -6,32 +6,47 @@ using System.Threading.Tasks;
 
 namespace DepartmentStoreApp
 {
-    enum Clothes
-    {
-        Shirts,
-        Shoes,
-        Pants,
-        Hats,
-
-        
-    }
+    
 
     class Program
     {
         
         static void Main(string[] args)
         {
+            Hats h = new Hats();
+            Pants p = new Pants();
+            Shoes s = new Shoes();
+            Shirts ss = new Shirts();
+
             int choice;
             Console.WriteLine("Welcome to E and J's Department Store");
-            Console.WriteLine("What department would you like to begin shopping...\n Shirts\nPants\nShoes\nHats\nSales Items");
+            Console.WriteLine("What department would you like to begin shopping...\n1.Shirts\n2.Pants\n3.Shoes\n4.Hats");
             string department = Console.ReadLine();
             int.TryParse(department, out choice);
 
+            if(choice == 1)
+            {
+                ss.Shirt();
+
+            }
+            else if(choice == 2)
+            {
+                p.Pant();
+            }
+            else if(choice == 3)
+            {
+                s.Shoe();
+            }
+            else
+            {
+                h.Hat();
+            }
+
+
+            
             
 
 
-
-            Console.WriteLine("Whats up?");
             Console.ReadLine();
             Console.ReadLine();
 
