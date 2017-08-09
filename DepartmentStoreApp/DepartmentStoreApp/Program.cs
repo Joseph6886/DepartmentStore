@@ -10,7 +10,11 @@ namespace DepartmentStoreApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("blah");
+            int choice;
+            Console.WriteLine("Welcome to E and J's Department Store");
+            Console.WriteLine("What department would you like to begin shopping...\n Shirts\nPants\nShoes\nHats\nSales Items");
+            string department = Console.ReadLine();
+            int.TryParse(department, out choice);
         }
     }
 }
