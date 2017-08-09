@@ -12,12 +12,15 @@ namespace DepartmentStoreApp
     }
     public class Shoes
     {
-        string SaleItem = "30% off";
-        string BShoes = "Blue Shoes";
-        string BlkShoes = "Black Shoes";
-        string RShoes = "Red Shoes";
-        string WShoes = "White Shoes";
-        string BrwnShoes = "Brown Shoes";
+        public static void Shoe()
+        {
+            string SaleItem = "30% off";
+            string BShoes = "Blue Shoes";
+            string BlkShoes = "Black Shoes";
+            string RShoes = "Red Shoes";
+            string WShoes = "White Shoes";
+            string BrwnShoes = "Brown Shoes";
+        }
 
     }
     public class Pants
