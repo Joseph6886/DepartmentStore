@@ -33,6 +33,8 @@ namespace DepartmentStoreApp
 
             Console.WriteLine("Whats up?");
             Console.ReadLine();
+            Console.ReadLine();
+
         }
     }
 }
