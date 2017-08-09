@@ -11,6 +11,9 @@ namespace DepartmentStoreApp
         static void Main(string[] args)
         {
             Console.WriteLine("blah");
+
+            Console.WriteLine("Whats up?");
+            Console.ReadLine();
         }
     }
 }
