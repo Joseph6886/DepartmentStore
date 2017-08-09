@@ -14,6 +14,8 @@ namespace DepartmentStoreApp
 
             Console.WriteLine("Whats up?");
             Console.ReadLine();
+
+            Console.WriteLine("Whats up again?");
         }
     }
 }
