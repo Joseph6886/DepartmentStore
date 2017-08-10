@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace DepartmentStoreApp
 {
-    
+
     enum kicks
     {
-        SaleItem=1,
+        SaleItem = 1,
         BShoes,
         BlkShoes,
         RShoes,
@@ -17,59 +17,84 @@ namespace DepartmentStoreApp
         BrwnShoes
 
     }
-    public class Shoes
+    public class Shoes : Pants
     {
-       
-        public static void SaleItem()
+
+        public static void SaleItem1(ref int NewBalance)
         {
+            NewBalance = 70;
             Console.WriteLine("This item is $100.00 30% off = $70.00");
-        }
-        public static void BShoes()
-        {
-            Console.WriteLine("This blue shirt is $50.00");
+            Console.ReadLine();
+            Console.Clear();
+
 
         }
-        public static void BlkShoes()
+        public static void BShoes(ref int NewBalance)
         {
+            NewBalance = 50;
+            Console.WriteLine("This blue shirt is $50.00");
+            Console.ReadLine();
+            Console.Clear();
+
+
+        }
+        public static void BlkShoes(ref int NewBalance)
+        {
+            NewBalance = 100;
             Console.WriteLine("This black shirt is $100.00");
+            Console.ReadLine();
+            Console.Clear();
+
         }
-        public static void RShoes()
+        public static void RShoes(ref int NewBalance)
         {
+            NewBalance = 35;
             Console.WriteLine("This red shirt is $35.00");
+            Console.ReadLine();
+            Console.Clear();
+
         }
-        public static void WShoes()
+        public static void WShoes(ref int NewBalance)
         {
+            NewBalance = 45;
             Console.WriteLine("This white shirt is $45.00");
+            Console.ReadLine();
+            Console.Clear();
+
         }
-        public static void BrwnShoes()
+        public static void BrwnShoes(ref int NewBalance)
         {
+            NewBalance = 60;
             Console.WriteLine("This brown shirt is $60.00");
+            Console.ReadLine();
+            Console.Clear();
+
         }
-        public void Shoe()
+        public void Shoe(ref int x)
         {
             int number;
             Console.WriteLine("What type of shoes are you looking for \n 1.Sale Item\n2.Blue Shoes\n3.Black Shoes\n4.Red Shoes\n5.White Shoes\n6.Brown Shoes ?");
             string type = Console.ReadLine();
             int.TryParse(type, out number);
-            switch((kicks)number)
+            switch ((kicks)number)
             {
                 case kicks.SaleItem:
-                    SaleItem();
+                    SaleItem1(ref x);
                     break;
                 case kicks.BShoes:
-                    BShoes();
-                        break;
+                    BShoes(ref x);
+                    break;
                 case kicks.BlkShoes:
-                    BlkShoes();
+                    BlkShoes(ref x);
                     break;
                 case kicks.RShoes:
-                    RShoes();
+                    RShoes(ref x);
                     break;
                 case kicks.WShoes:
-                    WShoes();
+                    WShoes(ref x);
                     break;
                 case kicks.BrwnShoes:
-                    BrwnShoes();
+                    BrwnShoes(ref x);
                     break;
 
 
@@ -77,40 +102,8 @@ namespace DepartmentStoreApp
             }
         }
 
-        
-        
+
+
 
     }
-    ////public class Pants
-    //{
-    //    string SaleItem = "30% off";
-    //    string BPants = "Blue Pants";
-    //    string BklPants = "Black Pants";
-    //    string RPants = "Red Pants";
-    //    string WPants = "White Pants";
-    //    string BrwnPants = "Brown Pants";
-
-    //}
-    //public class Shirts
-    //{
-    //    string SaleItem = "30% off";
-    //    string Bshirt = "Blue Shirt";
-    //    string Blkshirt = "Black Shirt";
-    //    string Rshirt = "Red Shirt";
-    //    string Wshirt = "White Shirt";
-    //    string Brwnhirt = "Brown Shirt";
-
-        //}
-        //public class Hats
-        //{
-        //    string SaleItem = "30% off";
-        //    string BHat = "Blue Hat";
-        //    string BlkHat = "Black Hat";
-        //    string RHat = "Red Hat";
-        //    string WHat = "White Hat";
-        //    string BrwnHat = "Brown Hat";
-
-
-        //}
-
-    }
+}
